@@ -51,5 +51,4 @@ Graphs are versatile data structures that represent relationships between object
 ## Contributing
 Contributions to this repository are welcome! If you'd like to add more examples, improve existing code, or fix any issues, please feel free to submit a pull request.
 
-## License
-This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
