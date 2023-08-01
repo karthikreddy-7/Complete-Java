@@ -5,8 +5,9 @@
 Welcome to the Java Coding Repository! This repository contains various Java programming examples and implementations for essential concepts and data structures. Below is an overview of the contents:
 
 ## Table of Contents
-- [Java OOPs Concepts](#java-oops-concepts)
-- [Sorting and Searching](#sorting-and-searching)
+- [Java OOPs Concepts](#Oops)
+- [Sorting](#sorting-and-searching)
+- [Searching](#Searching)
 - [Linked Lists](#linked-lists)
 - [Stacks](#stacks)
 - [Queues](#queues)
