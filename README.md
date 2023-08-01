@@ -1,13 +1,10 @@
-# DSA-JAVA
-
 # Java Coding Repository
 
 Welcome to the Java Coding Repository! This repository contains various Java programming examples and implementations for essential concepts and data structures. Below is an overview of the contents:
 
 ## Table of Contents
-- [Java OOPs Concepts](#Oops)
-- [Sorting](#sorting-and-searching)
-- [Searching](#Searching)
+- [Java OOPs Concepts](#java-oops-concepts)
+- [Sorting and Searching](#sorting-and-searching)
 - [Linked Lists](#linked-lists)
 - [Stacks](#stacks)
 - [Queues](#queues)
@@ -51,5 +48,4 @@ Graphs are versatile data structures that represent relationships between object
 
 ## Contributing
 Contributions to this repository are welcome! If you'd like to add more examples, improve existing code, or fix any issues, please feel free to submit a pull request.
-
 
