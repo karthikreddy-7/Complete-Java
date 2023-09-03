@@ -72,4 +72,15 @@ public class BinaryTree {
             return 0;
         return (Math.max(height(root.left), height(root.right)) + 1);
     }
+
+    static Node insert(Node root, int key) {
+        if (root == null)
+            return new Node(key);
+        if (root.data > key) {
+            root.left = insert(root.left, key);
+        } else if (root.data < key) {
+            root.right = insert(root.right, key);
+        }
+        return root;
+    }
 }
