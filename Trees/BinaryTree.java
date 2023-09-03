@@ -23,6 +23,9 @@ public class BinaryTree {
         System.out.println();
         System.out.print("Post-Order traversal:");
         postorder(root);
+        int height = height(root);
+        System.out.println();
+        System.out.println("height of binary tree is: " + height);
         sc.close();
     }
 
@@ -62,5 +65,11 @@ public class BinaryTree {
         postorder(root.left);
         postorder(root.right);
         System.out.print(root.data + "->");
+    }
+
+    static int height(Node root) {
+        if (root == null)
+            return 0;
+        return (Math.max(height(root.left), height(root.right)) + 1);
     }
 }
