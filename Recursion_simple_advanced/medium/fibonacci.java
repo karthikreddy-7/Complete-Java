@@ -9,6 +9,7 @@ public class fibonacci {
         int n = sc.nextInt();
         int res = fib(n);
         System.out.println("the value of Nth Fibonacci series is " + res);
+        sc.close();
     }
 
     static int fib(int n) {
