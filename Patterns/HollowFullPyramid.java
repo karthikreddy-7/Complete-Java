@@ -8,7 +8,7 @@ public class HollowFullPyramid {
         System.out.println("enter the value of N:");
         int n = sc.nextInt();
         int k = 0;
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i < n; i++) {
 
             for (int j = i; j < n; j++)
                 System.out.print(" ");
