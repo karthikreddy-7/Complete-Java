@@ -13,7 +13,16 @@ public class SortingUsingThreads {
         ascendingthread ascending = new ascendingthread(sort);
         descendingthread descending = new descendingthread(sort);
         ascending.start();
+        sort.print();
         descending.start();
+        sort.print();
+        try {
+            ascending.join();
+            descending.join();
+        } catch (InterruptedException e) {
+            System.out.println("Interrupted");
+        }
+        sort.print();
         sc.close();
     }
 }
@@ -26,6 +35,7 @@ class sorting {
     }
 
     public synchronized void ascending() {
+
         for (int i = 0; i < arr.length - 1; i++) {
             boolean swapped = false;
             for (int j = 0; j < arr.length - i - 1; j++) {
@@ -36,6 +46,12 @@ class sorting {
                     arr[j + 1] = temp;
                 }
             }
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Interrupted");
+            }
+
             if (!swapped) {
                 break;
             }
@@ -57,11 +73,24 @@ class sorting {
                     arr[j + 1] = temp;
                 }
             }
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Interrupted");
+            }
             if (!swapped) {
                 break;
             }
 
         }
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public void print() {
+        System.out.print("given by main thread ");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
